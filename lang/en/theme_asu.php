@@ -42,6 +42,7 @@ Contact: vickerylm@appstate.edu<br>
 </div></div>';
 
 $string['configtitle'] = 'asu';
+$string['courses'] = 'Courses';
 
 $string['customcss'] = 'Custom CSS';
 $string['customcssdesc'] = 'Whatever CSS rules you add to this textarea will be reflected in every page, making for easier customization of this theme.';
@@ -57,8 +58,19 @@ $string['logodesc'] = 'Please upload your custom logo here if you want to add it
 If the height of your logo is more than 75px add the following CSS rule to the Custom CSS box below.<br>
 a.logo {height: 100px;} or whatever height in pixels the logo is.';
 
-$string['pluginname'] = 'asu';
-
 $string['region-side-post'] = 'Right';
 $string['region-side-pre'] = 'Left';
+
+$string['pluginname'] = 'ASU';
+
+/* CustomMenu */
+$string['displaymydashboard'] = 'Display Dashboard';
+$string['displaymydashboarddesc'] = 'Display Dashboard of user links in the Custom Menu';
+$string['displaymycourses'] = 'Display enrolled courses';
+$string['displaymycoursesdesc'] = 'Display enrolled courses for users in the Custom Menu';
+$string['mycourses'] = 'My Courses';
+
+/* My Dashboard custommenu dropdown */
+$string['mydashboard'] = 'My Dashboard';
+
 

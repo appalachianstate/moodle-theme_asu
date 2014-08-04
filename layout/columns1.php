@@ -32,40 +32,18 @@ echo $OUTPUT->doctype() ?>
     <link rel="shortcut icon" href="<?php echo $OUTPUT->favicon(); ?>" />
     <?php echo $OUTPUT->standard_head_html() ?>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 
 <body <?php echo $OUTPUT->body_attributes(); ?>>
 
 <?php echo $OUTPUT->standard_top_of_body_html() ?>
 
-<header role="banner" class="navbar navbar-fixed-top<?php echo $html->navbarclass ?> moodle-has-zindex">
-    <nav role="navigation" class="navbar-inner">
-        <div class="container-fluid">
-            <a class="brand" href="<?php echo $CFG->wwwroot;?>"><?php echo $SITE->shortname; ?></a>
-            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </a>
-            <div class="nav-collapse collapse">
-                <?php echo $OUTPUT->custom_menu(); ?>
-                <ul class="nav pull-right">
-                    <li><?php echo $OUTPUT->page_heading_menu(); ?></li>
-                    <li class="navbar-text"><?php echo $OUTPUT->login_info() ?></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-</header>
+<?php require_once(dirname(__FILE__).'/includes/header.php'); ?>
 
 <div id="page" class="container-fluid">
 
     <header id="page-header" class="clearfix">
-        <?php echo $html->heading; ?>
-        <div id="page-navbar" class="clearfix">
-            <nav class="breadcrumb-nav"><?php echo $OUTPUT->navbar(); ?></nav>
-            <div class="breadcrumb-button"><?php echo $OUTPUT->page_heading_button(); ?></div>
-        </div>
         <div id="course-header">
             <?php echo $OUTPUT->course_header(); ?>
         </div>
@@ -73,6 +51,10 @@ echo $OUTPUT->doctype() ?>
 
     <div id="page-content" class="row-fluid">
         <section id="region-main" class="span12">
+        <div id="page-navbar" class="clearfix">
+            <nav class="breadcrumb-nav"><?php echo $OUTPUT->navbar(); ?></nav>
+            <div class="breadcrumb-button"><?php echo $OUTPUT->page_heading_button(); ?></div>
+        </div>
             <?php
             echo $OUTPUT->course_content_header();
             echo $OUTPUT->main_content();
@@ -80,20 +62,9 @@ echo $OUTPUT->doctype() ?>
             ?>
         </section>
     </div>
-
-    <footer id="page-footer">
-        <div id="course-footer"><?php echo $OUTPUT->course_footer(); ?></div>
-        <p class="helplink"><?php echo $OUTPUT->page_doc_link(); ?></p>
-        <?php
-        echo $html->footnote;
-        echo $OUTPUT->login_info();
-        echo $OUTPUT->home_link();
-        echo $OUTPUT->standard_footer_html();
-        ?>
-    </footer>
-
-    <?php echo $OUTPUT->standard_end_of_body_html() ?>
-
 </div>
+
+<?php require_once(dirname(__FILE__).'/includes/footer.php'); ?>
+
 </body>
 </html>

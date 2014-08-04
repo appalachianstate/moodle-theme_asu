@@ -65,4 +65,30 @@ if ($ADMIN->fulltree) {
     $setting = new admin_setting_confightmleditor($name, $title, $description, $default);
     $setting->set_updatedcallback('theme_reset_all_caches');
     $settings->add($setting);
+        
+    /* Custom Menu temp */
+    
+    // Toggle courses display in custommenu.
+    $name = 'theme_asu/displaymycourses';
+    $title = get_string('displaymycourses', 'theme_asu');
+    $description = get_string('displaymycoursesdesc', 'theme_asu');
+    $default = true;
+    $setting = new admin_setting_configcheckbox($name, $title, $description, $default, true, false);
+    $setting->set_updatedcallback('theme_reset_all_caches');
+    $settings->add($setting);
+    
+    // Set terminology for dropdown course list
+    $name = 'theme_asu/mycoursetitle';
+    $title = get_string('mycoursetitle','theme_asu');
+    $setting->set_updatedcallback('theme_reset_all_caches');
+    $settings->add($setting);
+    
+    // Toggle dashboard display in custommenu.
+    $name = 'theme_asu/displaymydashboard';
+    $title = get_string('displaymydashboard', 'theme_asu');
+    $description = get_string('displaymydashboarddesc', 'theme_asu');
+    $default = true;
+    $setting = new admin_setting_configcheckbox($name, $title, $description, $default, true, false);
+    $setting->set_updatedcallback('theme_reset_all_caches');
+    $settings->add($setting);
 }
