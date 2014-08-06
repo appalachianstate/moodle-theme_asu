@@ -1,15 +1,14 @@
 /* Custom CSS
 -------------------------*/
-@import url(//fonts.googleapis.com/css?family=Roboto|Oswald);
+@import url(//fonts.googleapis.com/css?family=Roboto);
 
 a.logo {
     background: url([[setting:logo]]) no-repeat 0 0;
     display: block;
     float: left;
-    height: 55px;
-    margin: 0;
-    padding: 0;
-    width: 200px;
+    height: 45px;
+    margin: 5px 3px 0 0;
+    width: 190px;
 }
 
 .dir-rtl a.logo {
@@ -19,7 +18,10 @@ a.logo {
 }
 
 .navbar, .navbar-fixed-top {
-	border-top: 5px solid #FED130;	
+	border-top: 4px solid #FED130;	
+	-webkit-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.25);
+	-moz-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.25);
+	box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.25);
 }
 
 .navbar, .brand {
@@ -30,8 +32,17 @@ a.logo {
 	line-height: 55px;
 }
 
+.navbar-inverse .navbar-text, .navbar-inverse .logininfo a {
+	color: #ddd;
+	border: 0;
+}
+
+.navbar-inverse .navbar-inner{
+	border:0;
+}
+
 .navbar .nav>li>a {
-	padding: 17px 15px 10px;
+	padding: 17px 15px;
 	color: #ddd;
 }
 
@@ -40,12 +51,21 @@ a.logo {
 	color: #ddd;
 }
 
+.navbar .nav>li>a:hover {
+	color: #fff;
+	background-color: #333;
+}
+
+.navbar-inverse .nav li.dropdown.open>.dropdown-toggle, .navbar-inverse .nav li.dropdown.active>.dropdown-toggle, .navbar-inverse .nav li.dropdown.open.active>.dropdown-toggle {
+	background-color: #000;
+}
+
 .dropdown-menu>li>a:hover {
-	background-color: #ccc;
+	background-image: linear-gradient(to bottom,#ffd200,#d9b300);
 }
 
 #page-header {
-	padding-top: 30px;
+	padding-top: 2.5em;
 }
 
 #page-footer {
@@ -55,6 +75,8 @@ a.logo {
 	text-align: left;
 	font-size: .8em;
 	padding: 2em;
+	margin-top: 2em;
+	border-top:0;
 }
 
 #page-footer a {
@@ -92,7 +114,19 @@ a.logo {
 	text-shadow:none;
 }
 
-.block {
+.course-content ul li.section.main {
+	border-bottom: 1px solid #ddd; 
+}
+
+.course-content .current {
+	-webkit-box-shadow: 0px 10px 10px -6px rgba(0,0,0,0.51);
+	-moz-box-shadow: 0px 10px 10px -6px rgba(0,0,0,0.51);
+	box-shadow: 0px 10px 10px -6px rgba(0,0,0,0.51);
+	background-color: #e8f2fe;
+	
+}
+
+.block, #dockeditempanel .dockeditempanel_content {
 background-color: #fff;
 border: 1px solid #e0e0e0;
 border-color: #e0e0e0;
@@ -105,7 +139,7 @@ box-shadow: inset 0 1px 1px rgba(0,0,0,0.05);
 }
 
 body { 
-	background: url([[pix:theme|fabric_of_squares_gray]]) repeat;
+	background: url([[pix:theme|cream_pixels]]) repeat #fff;
 	font-family: 'Roboto', sans-serif;
 	font-size: .9em;
 	font-style: normal;
@@ -115,20 +149,31 @@ body {
 	font-size: 1.75em;
 }
 
+.editing .section .activity:hover, .editing .section .activity.action-menu-shown {
+	background-color: #fff;
+}
+
+#course-category-listings li>div:hover {
+	background-color: #fff;
+}
+
 /* Blocks */
 /* Use FontAwesome Icons */
 
 .block .header h2 {
-padding: 3px 15px;
-margin: 0;
-font-family: 'Oswald', sans-serif;
-font-size: 1.3em;
-line-height: 20px;
-font-weight: 300;
-color: #666;
-text-shadow: 0;
-text-transform: Uppercase;
-word-wrap: break-word;
+	padding: 3px 15px;
+	margin: 0;
+	font-size: 1.4em;
+	line-height: 20px;
+	font-weight: 300;
+	color: #666;
+	text-shadow: 0;
+	text-transform: Uppercase;
+	word-wrap: break-word;
+}
+
+.block .header .title {
+	padding-bottom: 7px;
 }
 
 .block .header .title h2:before {

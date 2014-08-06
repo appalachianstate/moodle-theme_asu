@@ -69,6 +69,8 @@ $string['displaymydashboarddesc'] = 'Display Dashboard of user links in the Cust
 $string['displaymycourses'] = 'Display enrolled courses';
 $string['displaymycoursesdesc'] = 'Display enrolled courses for users in the Custom Menu';
 $string['mycourses'] = 'My Courses';
+$string['noenrolments'] = 'You have no current enrolments';
+
 
 /* My Dashboard custommenu dropdown */
 $string['mydashboard'] = 'My Dashboard';
