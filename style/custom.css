@@ -1,6 +1,6 @@
 /* Custom CSS
 -------------------------*/
-@import url(//fonts.googleapis.com/css?family=Roboto);
+@import url(//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic);
 
 a.logo {
     background: url([[setting:logo]]) no-repeat 0 0;
@@ -18,13 +18,11 @@ a.logo {
 }
 
 .navbar, .navbar-fixed-top {
-	border-top: 4px solid #FED130;	
-	-webkit-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.25);
-	-moz-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.25);
-	box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.25);
+	border-top: 5px solid #FED130;	
 }
 
-.navbar, .brand {
+.navbar, 
+.brand {
 	padding: 0;
 }
 
@@ -32,12 +30,13 @@ a.logo {
 	line-height: 55px;
 }
 
-.navbar-inverse .navbar-text, .navbar-inverse .logininfo a {
+.navbar-inverse .navbar-text, 
+.navbar-inverse .logininfo a {
 	color: #ddd;
 	border: 0;
 }
 
-.navbar-inverse .navbar-inner{
+.navbar-inverse .navbar-inner {
 	border:0;
 }
 
@@ -56,12 +55,32 @@ a.logo {
 	background-color: #333;
 }
 
-.navbar-inverse .nav li.dropdown.open>.dropdown-toggle, .navbar-inverse .nav li.dropdown.active>.dropdown-toggle, .navbar-inverse .nav li.dropdown.open.active>.dropdown-toggle {
+.navbar-inverse .nav li.dropdown.open>.dropdown-toggle, 
+.navbar-inverse .nav li.dropdown.active>.dropdown-toggle, 
+.navbar-inverse .nav li.dropdown.open.active>.dropdown-toggle {
 	background-color: #000;
 }
 
-.dropdown-menu>li>a:hover {
-	background-image: linear-gradient(to bottom,#ffd200,#d9b300);
+.dropdown-menu {
+	border-radius: inherit;
+	-moz-border-radius: inherit;
+}
+
+.dropdown-menu>li>a:hover,
+.dropdown-menu>li>a:focus,
+.dropdown-submenu:hover>a, 
+.dropdown-sumenu:focus>a {
+	background: #f1f1f1;
+	color: #000;
+} 
+
+#page {
+	background: #f9f9f9;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
 }
 
 #page-header {
@@ -69,22 +88,14 @@ a.logo {
 }
 
 #page-footer {
-	background: url([[pix:theme|classy_fabric]]) repeat;
-	background-color: #333;	
-	color: #ccc;
+	color: #fff;
 	text-align: left;
-	font-size: .8em;
-	padding: 4em 2em;
-	margin-top: 2em;
-	border-top:0;
+	padding: 2em 2em;
+	border-top: 0; 
 }
 
 #page-footer a {
-	color:#ffd200;
-}
-
-#page-footer a:focus, #page-footer a:hover {
-	color:#d9b300
+	color: #ffc900;
 }
 
 #page-footer .footnote.text-center {
@@ -92,18 +103,14 @@ a.logo {
 	text-align: left;
 }
 
-#page-footer .links {
-	font-size:1.25em;	
-}
-
 .left {
-	float:left;
-	clear:both;
+	float: left;
+	clear: both;
 }
 
 .right {
-	float:right;
-	clear:both;
+	float: right;
+	clear: both;
 }
 
 .breadcrumb {
@@ -111,7 +118,32 @@ a.logo {
 }
 
 .breadcrumb>li {
-	text-shadow:none;
+	text-shadow: none;
+}
+
+.block_search_forums .searchform {
+  text-align: inherit;
+}
+
+.block_recent_activity .activitydate, 
+.block_recent_activity .activityhead {
+  text-align: inherit;
+}
+
+.block .content h3 {
+	padding: 3px 15px 3px 0;
+}
+
+#page-footer, #page-footer .validators, 
+#page-footer .purgecaches, 
+#page-footer .performanceinfo {
+  text-align: inherit;
+}
+
+.course_category_tree .category>.info {
+	box-shadow: none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
 }
 
 .course-content ul li.section.main {
@@ -119,42 +151,47 @@ a.logo {
 }
 
 .course-content .current {
-	-webkit-box-shadow: 0px 10px 10px -6px rgba(0,0,0,0.51);
-	-moz-box-shadow: 0px 10px 10px -6px rgba(0,0,0,0.51);
-	box-shadow: 0px 10px 10px -6px rgba(0,0,0,0.51);
-	background-color: #F3F6FA;
-	
+	background-color: #f1f1f1;
 }
 
-.block, #dockeditempanel .dockeditempanel_content {
-background-color: #fff;
-border: 1px solid #e0e0e0;
-border-color: #e0e0e0;
--webkit-border-radius: 6px;
--moz-border-radius: 6px;
-border-radius: 6px;
--webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.05);
--moz-box-shadow: inset 0 1px 1px rgba(0,0,0,0.05);
-box-shadow: inset 0 1px 1px rgba(0,0,0,0.05);
+.block, 
+#dockeditempanel .dockeditempanel_content {
+	background-color: #fff;
+	border-top: 5px solid #ffc900 !important;
+}
+
+.block {
+	border: none;
+	border-radius: inherit;
+	-webkit-border-radius: inherit;
+	-moz-border-radius: inherit;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
 }
 
 body { 
-	background: url([[pix:theme|cream_pixels]]) repeat #fff;
-	font-family: 'Roboto', sans-serif;
-	font-size: .9em;
-	font-style: normal;
+	background: url([[pix:theme|classy_fabric]]) repeat #333;
+	font-family: 'Source Sans', sans-serif;
 }
 
 .course_title h2 {
 	font-size: 1.75em;
 }
 
-.editing .section .activity:hover, .editing .section .activity.action-menu-shown {
+.editing .section .activity:hover, 
+.editing .section .activity.action-menu-shown {
 	background-color: #fff;
 }
 
 #course-category-listings li>div:hover {
 	background-color: #fff;
+}
+
+@media (max-width: 768px) {
+	.right {
+		float: none;
+	}
 }
 
 /* Blocks */
