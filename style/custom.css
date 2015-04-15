@@ -179,6 +179,12 @@ body {
 	font-size: 1.75em;
 }
 
+.forumpost {
+	box-shadow: none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+}
+
 .editing .section .activity:hover, 
 .editing .section .activity.action-menu-shown {
 	background-color: #fff;

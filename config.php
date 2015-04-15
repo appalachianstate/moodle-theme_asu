@@ -45,6 +45,20 @@ $THEME->enable_dock = true;
 $THEME->editor_sheets = array();
 
 $THEME->rendererfactory = 'theme_overridden_renderer_factory';
+
+$empty = array();
+$col3regions = array('side-pre', 'side-post', 'footer');
+
+$THEME->layouts = array(
+    // The site home page.
+    'frontpage' => array(
+        'file' => 'frontpage.php',
+        'regions' => $col3regions,
+				'defaultregion' => 'side-pre',
+				'options' => array('nonavbar' => true),
+    ),
+);
+	
 $THEME->csspostprocess = 'theme_asu_process_css';
 
 $THEME->blockrtlmanipulations = array(
