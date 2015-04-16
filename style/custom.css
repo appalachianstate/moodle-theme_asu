@@ -184,6 +184,10 @@ body.pagelayout-redirect #page {
 	color: initial;
 }
 
+.debuggingmessage {
+	color: #fff;
+}
+
 .course_title h2 {
   font-size: 1.75em;
 }
