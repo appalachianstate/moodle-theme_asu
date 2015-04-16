@@ -176,6 +176,14 @@ body {
 	font-size: 100%;
 }
 
+body.pagelayout-redirect {
+	color: #fff;
+}
+
+body.pagelayout-redirect #page {
+	color: initial;
+}
+
 .course_title h2 {
   font-size: 1.75em;
 }
