@@ -135,6 +135,10 @@ a.logo {
   text-align: inherit;
 }
 
+table.setup-grades tr.category {
+  background: #ddd;
+}
+
 .course_category_tree .category>.info {
   box-shadow: none;
   -webkit-box-shadow: none;
