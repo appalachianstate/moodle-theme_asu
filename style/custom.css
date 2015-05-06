@@ -139,6 +139,39 @@ a.logo {
   text-align: inherit;
 }
 
+.user-grade tbody > tr:nth-child(n) > td.oddd1,
+.user-grade tbody > tr:nth-child(n) > th.oddd1{
+  background-color: #f3dfd0 !important;
+}
+.user-grade tbody > tr:nth-child(n) > td.oddd2,
+.user-grade tbody > tr:nth-child(n) > th.oddd2 {
+  background-color: #d0dbf3 !important;
+}
+.user-grade tbody > tr:nth-child(n) > td.oddd3,
+.user-grade tbody > tr:nth-child(n) > th.oddd3 {
+  background-color: #d0f3d6 !important;
+}
+
+.user-grade tbody > tr:nth-child(n) > td.oddd4,
+.user-grade tbody > tr:nth-child(n) > th.oddd4 {
+  background-color: #f0f0aa !important;
+}
+
+.user-grade tbody > tr:nth-child(n) > td.evend2,
+.user-grade tbody > tr:nth-child(n) > th.evend2 {
+  background-color: #b0bbd3 !important;
+}
+
+.user-grade tbody > tr:nth-child(n) > td.evend3,
+.user-grade tbody > tr:nth-child(n) > th.evend3 {
+  background-color: #b0dfb6 !important;
+}
+
+.user-grade tbody > tr:nth-child(n) > td.evend4,
+.user-grade tbody > tr:nth-child(n) > th.evend4 {
+  background-color: #cac8be !important;
+}
+
 th.leveleven,
 td.leveleven,
 table.setup-grades tr.category {
