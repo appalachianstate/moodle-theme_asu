@@ -2,6 +2,10 @@
 -------------------------*/
 @import url(//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic,700italic);
 
+div[role=main] {
+  padding: 10px;
+}
+
 a.logo {
   background: url([[setting:logo]]) no-repeat 0 0;
   display: block;
@@ -135,8 +139,10 @@ a.logo {
   text-align: inherit;
 }
 
+th.leveleven,
+td.leveleven,
 table.setup-grades tr.category {
-  background: #ddd;
+  background: #f1f1f1 !important;
 }
 
 .course_category_tree .category>.info {
