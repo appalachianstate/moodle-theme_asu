@@ -112,6 +112,10 @@ a.logo {
   clear: both;
 }
 
+table {
+  background: #f9f9f9 !important;
+}
+
 .breadcrumb {
   background-color: transparent;
 }
