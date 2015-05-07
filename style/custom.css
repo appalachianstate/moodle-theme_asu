@@ -2,10 +2,6 @@
 -------------------------*/
 @import url(//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic,700italic);
 
-div[role=main] {
-  padding: 10px;
-}
-
 a.logo {
   background: url([[setting:logo]]) no-repeat 0 0;
   display: block;
@@ -80,6 +76,7 @@ a.logo {
 
 #page {
   background: #f9f9f9;
+  padding: 10px;
 }
 
 #page-header {
