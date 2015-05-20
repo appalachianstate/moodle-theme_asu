@@ -30,14 +30,17 @@ echo $OUTPUT->doctype() ?>
     <?php echo $OUTPUT->standard_head_html() ?>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="apple-touch-icon" href="<?php echo $OUTPUT->pix_url('apple-touch-icon', 'theme'); ?>"/>
 </head>
 
 <body <?php echo $OUTPUT->body_attributes(); ?>>
 <?php echo $OUTPUT->standard_top_of_body_html() ?>
-<div id="page">
-    <div id="page-content" class="clearfix">
-        <?php echo $OUTPUT->main_content(); ?>
-    </div>
+<div id="page-wrapper">
+	<div id="page">
+	    <div id="page-content" class="clearfix">
+	        <?php echo $OUTPUT->main_content(); ?>
+	    </div>
+	</div>
 </div>
 <?php echo $OUTPUT->standard_end_of_body_html() ?>
 </body>

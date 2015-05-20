@@ -33,6 +33,7 @@ echo $OUTPUT->doctype() ?>
     <?php echo $OUTPUT->standard_head_html() ?>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="apple-touch-icon" href="<?php echo $OUTPUT->pix_url('apple-touch-icon', 'theme'); ?>"/>
 </head>
 
 <body <?php echo $OUTPUT->body_attributes(); ?>>
@@ -40,27 +41,28 @@ echo $OUTPUT->doctype() ?>
 <?php echo $OUTPUT->standard_top_of_body_html() ?>
 
 <?php require_once(dirname(__FILE__).'/includes/header.php'); ?>
+<div id="page-wrapper">
+	<div id="page" class="container-fluid">
 
-<div id="page" class="container-fluid">
+	    <header id="page-header" class="clearfix">
+	        <?php echo $html->heading; ?>
+	    </header>
 
-    <header id="page-header" class="clearfix">
-        <?php echo $html->heading; ?>
-    </header>
+	    <div id="page-content" class="row-fluid">
+	        <div id="region-bs-main-and-pre" class="span9">
+	            <div class="row-fluid">
+	                <section id="region-main" class="span8 pull-right">
+	                    <?php echo $OUTPUT->main_content(); ?>
+	                </section>
+	                <?php echo $OUTPUT->blocks('side-pre', 'span4 desktop-first-column'); ?>
+	            </div>
+	        </div>
+	        <?php echo $OUTPUT->blocks('side-post', 'span3'); ?>
+	    </div>
 
-    <div id="page-content" class="row-fluid">
-        <div id="region-bs-main-and-pre" class="span9">
-            <div class="row-fluid">
-                <section id="region-main" class="span8 pull-right">
-                    <?php echo $OUTPUT->main_content(); ?>
-                </section>
-                <?php echo $OUTPUT->blocks('side-pre', 'span4 desktop-first-column'); ?>
-            </div>
-        </div>
-        <?php echo $OUTPUT->blocks('side-post', 'span3'); ?>
-    </div>
+	    <?php echo $OUTPUT->standard_end_of_body_html() ?>
 
-    <?php echo $OUTPUT->standard_end_of_body_html() ?>
-
+	</div>
 </div>
 </body>
 </html>

@@ -45,6 +45,7 @@ echo $OUTPUT->doctype() ?>
     <?php echo $OUTPUT->standard_head_html() ?>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="apple-touch-icon" href="<?php echo $OUTPUT->pix_url('apple-touch-icon', 'theme'); ?>"/>
 </head>
 
 <body <?php echo $OUTPUT->body_attributes(); ?>>
@@ -52,36 +53,36 @@ echo $OUTPUT->doctype() ?>
 <?php echo $OUTPUT->standard_top_of_body_html() ?>
 
 <?php require_once(dirname(__FILE__).'/includes/header.php'); ?>
+<div id="page-wrapper">
+	<div id="page" class="container-fluid">
 
-<div id="page" class="container-fluid">
+	    <header id="page-header" class="clearfix">
+	        <div id="course-header">
+	            <?php echo $OUTPUT->course_header(); ?>
+	        </div>
+	    </header>
 
-    <header id="page-header" class="clearfix">
-        <div id="course-header">
-            <?php echo $OUTPUT->course_header(); ?>
-        </div>
-    </header>
-
-    <div id="page-content" class="row-fluid">
-        <div id="<?php echo $regionbsid ?>" class="span9">
-            <div class="row-fluid">
-                <section id="region-main" class="span8 pull-right">
-                <div id="page-navbar" class="clearfix">
-		            <nav class="breadcrumb-nav"><?php echo $OUTPUT->navbar(); ?></nav>
-		            <div class="breadcrumb-button"><?php echo $OUTPUT->page_heading_button(); ?></div>
-        		</div>
-                    <?php
-                    echo $OUTPUT->course_content_header();
-                    echo $OUTPUT->main_content();
-                    echo $OUTPUT->course_content_footer();
-                    ?>
-                </section>
-                <?php echo $OUTPUT->blocks('side-pre', 'span4 desktop-first-column'); ?>
-            </div>
-        </div>
-        <?php echo $OUTPUT->blocks('side-post', 'span3'); ?>
-    </div>
+	    <div id="page-content" class="row-fluid">
+	        <div id="<?php echo $regionbsid ?>" class="span9">
+	            <div class="row-fluid">
+	                <section id="region-main" class="span8 pull-right">
+	                <div id="page-navbar" class="clearfix">
+			            <nav class="breadcrumb-nav"><?php echo $OUTPUT->navbar(); ?></nav>
+			            <div class="breadcrumb-button"><?php echo $OUTPUT->page_heading_button(); ?></div>
+	        		</div>
+	                    <?php
+	                    echo $OUTPUT->course_content_header();
+	                    echo $OUTPUT->main_content();
+	                    echo $OUTPUT->course_content_footer();
+	                    ?>
+	                </section>
+	                <?php echo $OUTPUT->blocks('side-pre', 'span4 desktop-first-column'); ?>
+	            </div>
+	        </div>
+	        <?php echo $OUTPUT->blocks('side-post', 'span3'); ?>
+	    </div>
+	</div>
 </div>
-
 <?php require_once(dirname(__FILE__).'/includes/footer.php'); ?>
 
 </body>
