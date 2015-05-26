@@ -6,8 +6,8 @@
 
 a.logo {
   background: url([[setting:logo]]) no-repeat 0 0;
-	background-size: 170px;
-	background-position: left center;
+  background-size: 170px;
+  background-position: left center;
   display: block;
   float: left;
   height: 45px;
@@ -16,21 +16,21 @@ a.logo {
 }
 
 @media (max-width: 768px) {
-	a.logo {
-		margin: 5px 3px 0 20px;
-	}
-	.dir-rtl a.logo {
-		margin: 5px 20px 0 3px !important;
-	}
+  a.logo {
+    margin: 5px 3px 0 20px;
+  }
+  .dir-rtl a.logo {
+    margin: 5px 20px 0 3px !important;
+  }
 }
 
 .dir-rtl a.logo {
   background: url([[setting:logo]]) no-repeat 0 0;
   background-size: 170px;
-	background-position: right center;
-	display: block;
+  background-position: right center;
+  display: block;
   float: right;
-	margin: 5px 0 0 3px;
+  margin: 5px 0 0 3px;
 }
 
 .navbar {
@@ -38,9 +38,9 @@ a.logo {
 }
 
 @media (max-width: 979px) {
-	.navbar-fixed-top {
-		margin-bottom: 0;
-	}
+  .navbar-fixed-top {
+    margin-bottom: 0;
+  }
 }
 
 .navbar-text {
@@ -80,17 +80,17 @@ a.logo {
 }
 
 @media (max-width: 979px) {
-	.nav-collapse .nav > li > a:hover, 
-	.nav-collapse .nav > li > a:focus, 
-	.nav-collapse .dropdown-menu a:hover, 
-	.nav-collapse .dropdown-menu a:focus, 
-	.nav-collapse .dropdown-submenu a:focus, 
-	.nav-collapse .dropdown-submenu a:hover, 
-	.nav-collapse .dropdown-submenu a:active, 
-	.nav-collapse .dropdown-menu > li > a:hover, 
-	.nav-collapse .dropdown-menu > li > a:focus {
-	  color: #fff !important;
-	}
+  .nav-collapse .nav > li > a:hover, 
+  .nav-collapse .nav > li > a:focus, 
+  .nav-collapse .dropdown-menu a:hover, 
+  .nav-collapse .dropdown-menu a:focus, 
+  .nav-collapse .dropdown-submenu a:focus, 
+  .nav-collapse .dropdown-submenu a:hover, 
+  .nav-collapse .dropdown-submenu a:active, 
+  .nav-collapse .dropdown-menu > li > a:hover, 
+  .nav-collapse .dropdown-menu > li > a:focus {
+    color: #fff !important;
+  }
 }
 
 /* Page */
@@ -98,26 +98,26 @@ a.logo {
 body { 
   background: url([[pix:theme|classy_fabric]]) repeat #333;
   font-family: 'Source Sans Pro', sans-serif;
-	font-size: 100%;
+  font-size: 100%;
 }
 
 body.pagelayout-redirect {
-	color: #fff;
+  color: #fff;
 }
 
 body.pagelayout-redirect #page {
-	color: initial;
+  color: initial;
 }
 
 #page-wrapper {
-	background: #f9f9f9;
+  background: #f9f9f9;
 }
 
 @media (max-width: 768px) {
-	#page-wrapper {
-		margin-left: -20px;
-		margin-right: -20px;
-	}
+  #page-wrapper {
+    margin-left: -20px;
+    margin-right: -20px;
+  }
 }
 
 #page {
@@ -140,9 +140,9 @@ table {
 }
 
 table#user-grades span.gradevalue.hidden {
-	color:#999; 
-	display:inline; 
-	visibility: visible;
+  color: #999; 
+  display: inline; 
+  visibility: visible;
 }
 
 .setup-grades tr.category td.level1, 
@@ -216,7 +216,7 @@ table#user-grades span.gradevalue.hidden {
 }
 
 .debuggingmessage {
-	color: #fff;
+  color: #fff;
 }
 
 .course_title h2 {
@@ -499,7 +499,7 @@ table#user-grades span.gradevalue.hidden {
   color: #fff;
   padding: 2em 2em;
   border-top: 0; 
-	margin-top: 0;
+  margin-top: 0;
 }
 
 #page-footer a {
