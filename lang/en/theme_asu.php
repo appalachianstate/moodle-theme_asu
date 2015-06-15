@@ -34,8 +34,8 @@ $string['choosereadme'] = '
 <h3>Parents</h3>
 <p>This theme is based upon the Clean theme, which was created for Moodle 2.6.</p>
 <h3>Theme Credits</h3>
-<p>Authors: Lacey Vickery<br>
-Contact: vickerylm@appstate.edu<br>
+<p>Authors: Lacey Vickery, Michelle Melton<br>
+Contact: meltonml@appstate.edu<br>
 </p>
 <h3>More information</h3>
 <p><a href="asu/README.txt">How to copy and customise this theme.</a></p>
