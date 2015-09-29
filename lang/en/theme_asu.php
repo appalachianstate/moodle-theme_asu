@@ -60,6 +60,7 @@ a.logo {height: 100px;} or whatever height in pixels the logo is.';
 
 $string['region-side-post'] = 'Right';
 $string['region-side-pre'] = 'Left';
+$string['region-footer'] = 'Footer';
 
 $string['pluginname'] = 'ASU';
 
