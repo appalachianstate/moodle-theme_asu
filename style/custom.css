@@ -421,6 +421,14 @@ table#user-grades span.gradevalue.hidden {
   content: "\f099";
 }
 
+.block_course_evals .header .title h2:before {
+  content: "/f03a";
+}
+
+.block_app_search .header .title h2:before {
+  content: "/f002";
+}
+
 /* Breadcrumbs */
 
 .breadcrumb {
