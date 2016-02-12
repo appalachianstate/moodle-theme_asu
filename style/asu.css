@@ -1,0 +1,198 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,600);
+
+/* General */
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  background: #222;
+  color: #222;
+}
+
+/* Navigation */
+.navbar {
+  margin-bottom: 0;
+  border: 0;
+}
+
+/* Header */
+.notifytiny.debuggingmessage {
+  color: #fff;
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    border-radius: initial;
+  }
+}
+
+.navbar-brand {
+  padding: 10px;
+}
+
+.navbar-brand > img {
+  max-width: 137px;
+  height: auto;
+}
+
+#sitename {
+  position: relative;
+  top: 4px;
+  left: 10px;
+  font-size: 24px;
+}
+
+.moodleheader {
+  color: #fff;
+  background: #3d3d3d;
+}
+
+.breadcrumb {
+  background-color: inherit;
+}
+
+/* Content */
+#page {
+  background: #fff;
+  padding-top: 10px;
+}
+
+#page .notifytiny.debuggingmessage {
+  color: inherit;
+}
+
+.panel,
+.block,
+.forumpost {
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  background: #f6f6f6;
+}
+
+.block .header {
+  border-bottom: 0;
+}
+
+.block .header h2 {
+  border-bottom: 1px solid #c3c3c3;
+  padding-bottom: 8px;
+  font-size: 20px;
+  color: #b04610;
+}
+
+.loginbox.twocolumns .loginpanel {
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+.panel-default > .panel-heading, 
+.box.message table td.heading, 
+.box.message .messagearea .messagerecent .singlemessage .otheruser, 
+.block .header, 
+#dockeditempanel .dockeditempanel_hd {
+  color: #222; 
+  background-color: inherit;
+}
+
+.course-content ul li.section.main {
+  border-bottom: 1px solid #ffcc00;
+  padding: 0 10px 10px 10px;
+}
+
+.course-content .current {
+  background-color: #f6f6f6;
+}
+
+.block_course_overview .coursebox {
+  border-bottom: 1px solid #ffcc00;
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+}
+
+select {
+  width: auto;
+}
+
+select#idp {
+  max-width: 275px;
+}
+
+.no-overflow {
+  margin-bottom: 0;
+}
+
+input[type="radio"]+label, 
+input[type="checkbox"]+label {
+  display: inline;
+}
+
+.form-item .form-setting select, 
+.form-item .form-setting input[type="text"], 
+.form-item .form-setting input[type="password"] {
+  display: inline-block;
+}
+
+.mform label {
+  display: inline-block;
+}
+
+.mform .fitemtitle, 
+.form-label {
+  text-align: left;
+}
+
+@media (min-width: 1200px) {
+  .mform .fitemtitle, 
+  .form-label {
+    text-align: right;
+  }
+}
+
+.path-admin-mod-lti .mform .fitem .fitemtitle {
+  min-width: inherit;
+}
+
+table.profilingruntable td.label {
+  color: inherit;
+}
+
+#add, 
+#remove, 
+.mdl-align {
+  text-align: inherit;
+}
+
+/* Footer */
+#page-footer {
+  color: #fff;
+  margin-top: 0;
+  border-top: 0;
+  text-align: inherit;
+}
+
+#page-footer a {
+  color: #ffcc00;
+}
+
+img.logo {
+  max-width: 137px;
+  height: auto;
+}
+
+@media (min-width: 768px) {
+  img.logo {
+    float: right;
+  }
+}
+
+#page-footer, 
+#page-footer .validators, 
+#page-footer .purgecaches, 
+#page-footer .performanceinfo {
+  text-align: left;
+}

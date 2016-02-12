@@ -13,67 +13,46 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-
 /**
- * Strings for component 'theme_asu', language 'en'
+ * Strings for component 'theme_asu', language 'en', branch 'MOODLE_23_STABLE'
  *
- * @package   theme_asu
- * @copyright 2013 Moodle, moodle.org
+ * @package   ASU Bootstrap theme
+ * @author    Michelle Melton <meltonml@appstate.edu>
+ * @copyright 2015 Appalachian State University
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-$string['choosereadme'] = '
-<div class="clearfix">
-<div class="well">
-<h2>ASU</h2>
-<p><img class=img-polaroid src="asu/pix/screenshot.jpg" /></p>
-</div>
-<div class="well">
-<h3>About</h3>
-<p>ASU is a modified Moodle Clean theme which inherits styles and renderers from its parent theme.</p>
-<h3>Parents</h3>
-<p>This theme is based upon the Clean theme, which was created for Moodle 2.6.</p>
-<h3>Theme Credits</h3>
-<p>Authors: Lacey Vickery, Michelle Melton<br>
-Contact: meltonml@appstate.edu<br>
-</p>
-<h3>More information</h3>
-<p><a href="asu/README.txt">How to copy and customise this theme.</a></p>
-</div></div>';
-
-$string['configtitle'] = 'asu';
-$string['courses'] = 'Courses';
-
-$string['customcss'] = 'Custom CSS';
-$string['customcssdesc'] = 'Whatever CSS rules you add to this textarea will be reflected in every page, making for easier customization of this theme.';
-
-$string['footnote'] = 'Footnote';
-$string['footnotedesc'] = 'Whatever you add to this textarea will be displayed in the footer throughout your Moodle site.';
-
-$string['invert'] = 'Invert navbar';
-$string['invertdesc'] = 'Swaps text and background for the navbar at the top of the page between black and white.';
-
-$string['logo'] = 'Logo';
-$string['logodesc'] = 'Please upload your custom logo here if you want to add it to the header.<br>
-If the height of your logo is more than 75px add the following CSS rule to the Custom CSS box below.<br>
-a.logo {height: 100px;} or whatever height in pixels the logo is.';
-
+$string['pluginname'] = 'ASU Bootstrap';
 $string['region-side-post'] = 'Right';
 $string['region-side-pre'] = 'Left';
-$string['region-footer'] = 'Footer';
-
-$string['pluginname'] = 'ASU';
-
-/* CustomMenu */
-$string['displaymydashboard'] = 'Display Dashboard';
-$string['displaymydashboarddesc'] = 'Display Dashboard of user links in the Custom Menu';
-$string['displaymycourses'] = 'Display enrolled courses';
-$string['displaymycoursesdesc'] = 'Display enrolled courses for users in the Custom Menu';
-$string['mycourses'] = 'My Courses';
+$string['fullscreen'] = 'Full screen';
+$string['closefullscreen'] = 'Close full screen';
+$string['mycourses'] = 'Courses';
 $string['noenrolments'] = 'You have no current enrolments';
+$string['mydashboard'] = 'Dashboard';
 
-
-/* My Dashboard custommenu dropdown */
-$string['mydashboard'] = 'My Dashboard';
-
+$string['choosereadme'] = '
+<p>This is a theme for Appalachian State University based on the Bootstrap Base.</p>
+<div class="clearfix"><div class="theme_screenshot"><h2>Bootstrap Base</h2>
+<img class=img-polaroid src="bootstrap/pix/screenshot.jpg" />
+<h3>Theme Credits</h3>
+<h3>Moodle Bootstrap 3 theme</h3>
+<p>This theme is based on the Bootstrap CSS framework, version 3.0</p>
+<p><a href="http://getbootstrap.com">http://getbootstrap.com</a></p>
+<p>This is a GPL theme that is available on GitHub:</p>
+<p><a href=https://github.com/bmbrands/theme_bootstrap">https://github.com/bmbrands/theme_bootstrap</a></p>
+<p>Feel free to modify / improve / share</p>
+<p>This theme has been created with the help of: Joby Harding, Gareth J Barnard.</p>
+<p>Authors: Bas Brands, David Scotson<br>
+Contact: bas@sonsbeekmedia.nl<br>
+Website: <a href="http://www.basbrands.nl">www.basbrands.nl</a><br></p>
+<h3>Reporting bugs</h3>
+<p>You can report bugs on the <a href="https://github.com/bmbrands/theme_bootstrap/issues">github page</a> for this theme or
+on the Moodle tracker</p>
+<h3>More information</h3>
+<ul>
+<li><a href="https://github.com/bmbrands/theme_bootstrap/wiki">Wiki page for this theme</a>
+<li><a href="http://docs.moodle.org/23/en/bootstrap-Theme">Bootstrap on Moodle docs</a></li>
+<li><a href="http://theming.sonsbeekmedia.nl/">Theme testing playground </a></li>
+</ul>';
 
