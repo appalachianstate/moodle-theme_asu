@@ -81,7 +81,7 @@ $THEME->layouts = array(
     ),
     // The site home page.
     'frontpage' => array(
-        'file' => 'default.php',
+        'file' => 'frontpage.php',
         'regions' => array('side-pre', 'side-post'),
         'defaultregion' => 'side-pre',
         'options' => array('nonavbar' => true),
@@ -162,5 +162,5 @@ $THEME->layouts = array(
 );
 
 $THEME->javascripts = array();
-$THEME->javascripts_footer = array('tables');
+$THEME->javascripts_footer = array('asu');
 $THEME->hidefromselector = false;

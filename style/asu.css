@@ -14,6 +14,24 @@ body {
   border: 0;
 }
 
+.usermenu > li > a:hover {
+  background-color: inherit;
+}
+
+.usermenu .open > a, 
+.usermenu .open > a:hover, 
+.usermenu .open > a:focus {
+  background-color: inherit;
+}
+
+.usermenu a {
+  color: #9d9d9d;
+}
+
+.usermenu a:hover {
+    color: #fff;
+}
+
 /* Header */
 .notifytiny.debuggingmessage {
   color: #fff;

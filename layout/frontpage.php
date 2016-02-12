@@ -85,7 +85,11 @@ echo $OUTPUT->doctype() ?>
             </header>
 
             <div id="page-content" class="row">
-                <div id="region-main" class="<?php echo $regions['content']; ?>">
+                <?php
+                if ($knownregionpre) {
+                    echo $OUTPUT->blocks('side-pre', 'col-sm-4 col-lg-4 block-region');
+                }?>
+                <div id="region-main" class="col-sm-8 col-lg-8">
                     <?php
                     echo $OUTPUT->course_content_header();
 
@@ -93,11 +97,6 @@ echo $OUTPUT->doctype() ?>
                     echo $OUTPUT->course_content_footer();
                     ?>
                 </div>
-
-                <?php
-                if ($knownregionpre) {
-                    echo $OUTPUT->blocks('side-pre', $regions['pre']);
-                }?>
                 <?php
                 if ($knownregionpost) {
                     echo $OUTPUT->blocks('side-post', $regions['post']);

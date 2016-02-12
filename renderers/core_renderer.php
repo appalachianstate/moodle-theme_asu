@@ -34,24 +34,6 @@ class theme_asu_core_renderer extends theme_bootstrap_core_renderer
       }
     }
     
-    /*
-     * This code adds My dashboard to the custom menu.
-     */
-    if (isloggedin() && !isguestuser())
-    {
-      $branchlabel = get_string('mydashboard', 'theme_asu');
-      $branchurl   = new moodle_url('/my/index.php');
-      $branchtitle = get_string('mydashboard', 'theme_asu');
-      $branchsort  = 10000;
-      
-      $branch = $menu->add($branchlabel, $branchurl, $branchtitle, $branchsort);
-      //$branch->add(get_string('profile').'</em>',new moodle_url('/user/profile.php'),get_string('profile'));
-      $branch->add(get_string('pluginname', 'block_calendar_month').'</em>',new moodle_url('/calendar/view.php'),get_string('pluginname', 'block_calendar_month'));
-      $branch->add(get_string('pluginname', 'block_messages').'</em>',new moodle_url('/message/index.php'),get_string('pluginname', 'block_messages'));
-      $branch->add(get_string('privatefiles', 'block_private_files').'</em>',new moodle_url('/user/files.php'),get_string('privatefiles', 'block_private_files'));
-      //$branch->add(get_string('logout').'</em>',new moodle_url('/login/logout.php'),get_string('logout'));
-    }
-    
     return parent::render_custom_menu($menu);
   }
 }
