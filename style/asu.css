@@ -8,6 +8,10 @@ body {
   color: #222;
 }
 
+a {
+  color: #2d699e;
+}
+
 /* Navigation */
 .navbar {
   margin-bottom: 0;
@@ -35,6 +39,10 @@ body {
 /* Header */
 .notifytiny.debuggingmessage {
   color: #fff;
+}
+
+.skiplinks a.skip {
+  color: #fc0;
 }
 
 @media (min-width: 768px) {
@@ -103,6 +111,10 @@ body {
   border-radius: 0;
   box-shadow: none;
   -webkit-box-shadow: none;
+}
+
+a.btn-asu {
+  color: #222;
 }
 
 .panel-default > .panel-heading, 

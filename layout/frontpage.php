@@ -66,7 +66,6 @@ echo $OUTPUT->doctype() ?>
 
 <header class="moodleheader">
     <div class="container-fluid">
-    <a href="<?php echo $CFG->wwwroot ?>" class="logo"></a>
     <?php echo $OUTPUT->page_heading(); ?>
     </div>
 </header>
