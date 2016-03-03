@@ -140,6 +140,10 @@ a.btn-asu {
   margin-bottom: 10px;
 }
 
+.path-mod-quiz .qnbutton {
+  width: 1.75em;
+}
+
 label {
   display: block;
 }
