@@ -159,6 +159,15 @@ a.btn-asu {
   margin-bottom: 10px;
 }
 
+.block.block_calendar_month td.today .eventcontent a {
+  color: inherit !important;
+}
+
+.block .calendar-event-panel .yui3-overlay-content {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
 .path-mod-quiz .qnbutton {
   width: 1.75em;
 }
