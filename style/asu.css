@@ -18,6 +18,10 @@ a {
   border: 0;
 }
 
+#moodle-navbar ul.nav.pull-right {
+  margin: 0;
+}
+
 .usermenu > li > a:hover {
   background-color: inherit;
 }
