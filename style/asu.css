@@ -168,8 +168,16 @@ a.btn-asu {
   box-shadow: none;
 }
 
+.block.block_calendar_month .content {
+  padding: 4px 14px;
+}
+
 .path-mod-quiz .qnbutton {
   width: 1.75em;
+}
+
+#addmembersform .table-responsive {
+  overflow-x: visible;
 }
 
 label {
