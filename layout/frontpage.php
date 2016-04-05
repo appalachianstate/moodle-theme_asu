@@ -107,7 +107,7 @@ echo $OUTPUT->doctype() ?>
 <footer id="page-footer">
     <div id="page-footer-inner" class="container-fluid">
             <div id="course-footer"><?php echo $OUTPUT->course_footer(); ?></div>
-            <img class='logo' src="<?php echo $OUTPUT->pix_url('ASUbird', 'theme'); ?>" alt="Appalachian State University" />
+            <a href="http://www.appstate.edu"><img class='logo' src="<?php echo $OUTPUT->pix_url('ASUbird', 'theme'); ?>" alt="Appalachian State University" /></a>
             <?php
             echo "<div><a href='http://asulearnhelp.appstate.edu'>AsULearn Support</a></div>";
             echo $OUTPUT->login_info();
