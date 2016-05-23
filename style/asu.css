@@ -12,6 +12,11 @@ a {
   color: #04669d;
 }
 
+#page-content {
+  background: #fff;
+  padding: 10px;
+}
+
 /* Navigation */
 .navbar {
   margin-bottom: 0;
