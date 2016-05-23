@@ -31,7 +31,7 @@ echo $OUTPUT->doctype() ?>
 <head>
     <title><?php echo $OUTPUT->page_title(); ?></title>
     <link rel="shortcut icon" href="<?php echo $OUTPUT->favicon(); ?>" />
-    <link href='//fonts.googleapis.com/css?family=Open+Sans:300,600,300italic' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:400,700,400italic' rel='stylesheet' type='text/css'>
     <?php echo $OUTPUT->standard_head_html(); ?>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimal-ui">
 </head>
