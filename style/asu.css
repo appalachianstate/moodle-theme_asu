@@ -237,6 +237,15 @@ input[type="checkbox"]+label {
   min-width: inherit;
 }
 
+.gradingform_guide.editor .hiddenelement,
+.gradingform_guide.editor input.pseudotablink {
+  display: none !important;
+}
+
+.gradingform_guide .criterion .description .criterionmaxscore input {
+  width: 100px !important;
+}
+
 table.profilingruntable td.label {
   color: inherit;
 }
