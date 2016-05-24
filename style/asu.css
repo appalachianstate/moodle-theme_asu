@@ -12,9 +12,8 @@ a {
   color: #04669d;
 }
 
-#page-content {
+table {
   background: #fff;
-  padding: 10px;
 }
 
 /* Navigation */
@@ -108,6 +107,11 @@ a.dimmed_text:visited,
 #page {
   background: #fff;
   padding-top: 10px;
+}
+
+#page-content {
+  background: #fff;
+  padding: 10px;
 }
 
 #page .notifytiny.debuggingmessage {
