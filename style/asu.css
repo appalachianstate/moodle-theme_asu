@@ -272,7 +272,7 @@ th.range span {
 }
 
 .path-grade-report-singleview input[name^="finalgrade"] {
-  width: auto;
+  width: 95px;
 }
 
 /* Footer */
