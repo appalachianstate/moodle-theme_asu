@@ -271,6 +271,10 @@ th.range span {
   display: none;
 }
 
+.path-grade-report-singleview input[name^="finalgrade"] {
+  width: auto;
+}
+
 /* Footer */
 #page-footer {
   color: #fff;
