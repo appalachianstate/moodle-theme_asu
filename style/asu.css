@@ -267,6 +267,10 @@ table.profilingruntable td.label {
   background: #fff;
 }
 
+table.fixed-column th.category.catlevel2.c0 {
+  display: none;
+}
+
 th.range span {
   display: none;
 }
