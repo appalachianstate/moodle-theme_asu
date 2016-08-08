@@ -168,6 +168,10 @@ a.btn-asu {
   background-color: #f6f6f6;
 }
 
+.section .modtype_label .mod-indent-outer {
+  display: table;
+}
+
 .block_course_overview .coursebox {
   border-bottom: 1px solid #ffcc00;
   margin-bottom: 10px;
