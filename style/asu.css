@@ -283,23 +283,23 @@ th.range span {
   width: 95px;
 }
 
-table.setup-grades th.level1,
-table.setup-grades td.level1 {
+table.setup-grades tr.category th.level1,
+table.setup-grades tr.category td.level1 {
   background: #f2e5de;
 }
 
-table.setup-grades th.level2,
-table.setup-grades td.level2 {
+table.setup-grades tr.category th.level2,
+table.setup-grades tr.category td.level2 {
   background: #fcf8e3;
 }
 
-table.setup-grades th.level3,
-table.setup-grades td.level3 {
+table.setup-grades tr.category th.level3,
+table.setup-grades tr.category td.level3 {
   background: #d9edf7;
 }
 
-table.setup-grades th.level4,
-table.setup-grades td.level4 {
+table.setup-grades tr.category th.level4,
+table.setup-grades tr.category td.level4 {
   background: #dff0d8;
 }
 
