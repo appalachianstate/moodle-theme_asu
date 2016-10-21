@@ -266,7 +266,7 @@ table.profilingruntable td.label {
 
 .table-responsive > .fixed-column {
   position: absolute;
-  display: inline-block;
+  /* display: inline-block; */
   width: auto;
   background: #fff;
 }
