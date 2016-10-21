@@ -31,7 +31,7 @@ $(document).ready(function(){
 
   $generaltable.find('th.range').wrapInner('<span></span>');
 
-  var $fixedcolwid = $generaltable.find('th.c0').width() + $generaltable.find('th.c1').width();
+  var $fixedcolwid = $generaltable.find('th.c0').outerWidth() + $generaltable.find('th.c1').outerWidth();
 
   $fixedColumnGeneral.width($fixedcolwid);
 });
