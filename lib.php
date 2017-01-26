@@ -14,69 +14,15 @@
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
-
 /**
- * Renderers to align Moodle's HTML with that expected by Bootstrap
+ * Renderers to align Moodle's HTML with that expected by Boost
  *
- * @package    theme_bootstrap
- * @copyright  2014 Bas Brands, www.basbrands.nl
- * @authors    Bas Brands, David Scotson
+ * @package    theme_asu
+ * @copyright  Appalachian State University
+ * @author     Michelle Melton
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
 
-function bootstrap_grid_asu($hassidepre, $hassidepost) {
-
-    if ($hassidepre && $hassidepost) {
-        $regions = array('content' => 'col-sm-6 col-sm-push-3 col-lg-6 col-lg-push-3');
-        $regions['pre'] = 'col-sm-3 col-sm-pull-6 col-lg-3 col-lg-pull-6';
-        $regions['post'] = 'col-sm-3 col-lg-3';
-    } else if ($hassidepre && !$hassidepost) {
-        $regions = array('content' => 'col-sm-8 col-sm-push-4 col-lg-8 col-lg-push-4');
-        $regions['pre'] = 'col-sm-4 col-sm-pull-8 col-lg-4 col-lg-pull-8';
-        $regions['post'] = 'emtpy';
-    } else if (!$hassidepre && $hassidepost) {
-        $regions = array('content' => 'col-sm-8 col-lg-8');
-        $regions['pre'] = 'empty';
-        $regions['post'] = 'col-sm-4 col-lg-4';
-    } else if (!$hassidepre && !$hassidepost) {
-        $regions = array('content' => 'col-md-12');
-        $regions['pre'] = 'empty';
-        $regions['post'] = 'empty';
-    }
-    
-    if ('rtl' === get_string('thisdirection', 'langconfig')) {
-        if ($hassidepre && $hassidepost) {
-            $regions['pre'] = 'col-sm-3  col-sm-push-3 col-lg-2 col-lg-push-2';
-            $regions['post'] = 'col-sm-3 col-sm-pull-9 col-lg-2 col-lg-pull-10';
-        } else if ($hassidepre && !$hassidepost) {
-            $regions = array('content' => 'col-sm-9 col-lg-10');
-            $regions['pre'] = 'col-sm-3 col-lg-2';
-            $regions['post'] = 'empty';
-        } else if (!$hassidepre && $hassidepost) {
-            $regions = array('content' => 'col-sm-9 col-sm-push-3 col-lg-10 col-lg-push-2');
-            $regions['pre'] = 'empty';
-            $regions['post'] = 'col-sm-3 col-sm-pull-9 col-lg-2 col-lg-pull-10';
-        }
-    }
-    return $regions;
-}
-
-/**
- * Loads the JavaScript for the zoom function.
- *
- * @param moodle_page $page Pass in $PAGE.
- */
-function theme_bootstrap_initialise_zoom_asu(moodle_page $page) {
-    user_preference_allow_ajax_update('theme_bootstrap_zoom', PARAM_TEXT);
-    $page->requires->yui_module('moodle-theme_bootstrap-zoom', 'M.theme_bootstrap.zoom.init', array());
-}
-
-/**
- * Get the user preference for the zoom function.
- */
-function theme_bootstrap_get_zoom_asu() {
-    return get_user_preferences('theme_bootstrap_zoom', '');
-}

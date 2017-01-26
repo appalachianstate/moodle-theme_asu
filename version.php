@@ -19,15 +19,15 @@
  *
  * @package    theme_asu
  * @copyright  Appalachian State University
- * @author    Michelle Melton
+ * @author     Michelle Melton
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die;
 
-$plugin->version   = 2016020100;
-$plugin->requires  = 2014050800;
+$plugin->version   = 2017012600;
+$plugin->requires  = 2016120501;
 $plugin->component = 'theme_asu';
 $plugin->dependencies = array(
-    'theme_bootstrap'  => 2015110600,
+    'theme_boost'  => 2016120500,
 );
