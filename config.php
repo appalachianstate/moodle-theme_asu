@@ -32,3 +32,15 @@ $THEME->yuicssmodules = array();
 $THEME->rendererfactory = 'theme_overridden_renderer_factory';
 $THEME->requiredblocks = '';
 $THEME->addblockposition = BLOCK_ADDBLOCK_POSITION_FLATNAV;
+$THEME->scss = function($theme) {
+    return theme_asu_get_main_scss_content($theme);
+};
+$THEME->layouts = array(
+        // Standard layout with blocks, this is recommended for most pages with general information
+        'standard' => array(
+                'theme' => 'asu',
+                'file' => 'columns2.php',
+                'regions' => array('side-pre'),
+                'defaultregion' => 'side-pre'
+        )
+);
