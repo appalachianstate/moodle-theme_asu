@@ -36,11 +36,11 @@ $THEME->scss = function($theme) {
     return theme_asu_get_main_scss_content($theme);
 };
 $THEME->layouts = array(
-        // Standard layout with blocks, this is recommended for most pages with general information
-        'standard' => array(
-                'theme' => 'asu',
-                'file' => 'columns2.php',
-                'regions' => array('side-pre'),
-                'defaultregion' => 'side-pre'
-        )
+    // Standard layout with blocks, this is recommended for most pages with general information
+    'standard' => array(
+        'theme' => 'asu',
+        'file' => 'columns2.php',
+        'regions' => array('side-pre'),
+        'defaultregion' => 'side-pre'
+    )
 );

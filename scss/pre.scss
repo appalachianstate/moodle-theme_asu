@@ -1,0 +1,20 @@
+// Pre SCSS for the theme.
+
+$asu-gold: #ffcc00;
+$footer-link-color: $asu-gold;
+$asu-link: #04669d;
+$link-color: $asu-link;
+$asu-btn-color: #3a3a3a;
+
+.usermenu {
+  .login {
+    a {
+      color: $asu-gold !important;
+    }
+  }
+    
+  a .userbutton, 
+  a.dropdown-toggle::after {
+    color: $asu-gold !important;
+  }
+}
