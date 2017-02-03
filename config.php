@@ -38,9 +38,13 @@ $THEME->scss = function($theme) {
 $THEME->layouts = array(
     // Standard layout with blocks, this is recommended for most pages with general information
     'standard' => array(
-        'theme' => 'asu',
         'file' => 'columns2.php',
         'regions' => array('side-pre'),
         'defaultregion' => 'side-pre'
-    )
+    ),
+    'login' => array(
+        'file' => 'columns2.php',
+        'regions' => array(),
+        'options' => array('langmenu' => true),
+    )   
 );
