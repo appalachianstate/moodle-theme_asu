@@ -23,6 +23,8 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
+defined('MOODLE_INTERNAL') || die();
+
 $THEME->name = 'asu';
 $THEME->sheets = [];
 $THEME->editor_sheets = [];
@@ -36,7 +38,7 @@ $THEME->scss = function($theme) {
     return theme_asu_get_main_scss_content($theme);
 };
 $THEME->layouts = array(
-    // Standard layout with blocks, this is recommended for most pages with general information
+    // Standard layout with blocks, this is recommended for most pages with general information.
     'standard' => array(
         'file' => 'columns2.php',
         'regions' => array('side-pre'),
@@ -46,5 +48,5 @@ $THEME->layouts = array(
         'file' => 'columns2.php',
         'regions' => array(),
         'options' => array('langmenu' => true),
-    )   
+    )
 );

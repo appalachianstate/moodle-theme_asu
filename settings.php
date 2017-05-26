@@ -59,7 +59,7 @@ if ($ADMIN->fulltree) {
 
     // Preset files setting.
     $name = 'theme_asu/presetfiles';
-    $title = get_string('presetfiles','theme_asu');
+    $title = get_string('presetfiles', 'theme_asu');
     $description = get_string('presetfiles_desc', 'theme_asu');
 
     $setting = new admin_setting_configstoredfile($name, $title, $description, 'preset', 0,

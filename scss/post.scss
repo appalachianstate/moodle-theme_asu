@@ -1,24 +1,24 @@
 // Post SCSS for the theme.
 
 .navbar-brand {
-  padding-top: 0;
+    padding-top: 0;
 }
 
-@media(min-width: 768px) {
-  .asubird {
-    float: right;
-  }
+@media (min-width: 768px) {
+    .asubird {
+        float: right;
+    }
 }
 
 .usermenu {
-  .login {
-    a {
-      color: $asu-gold !important;
+    .login {
+        a {
+            color: $asu-gold !important;
+        }
     }
-  }
-    
-  a .userbutton, 
-  a.dropdown-toggle::after {
-    color: $asu-gold !important;
-  }
+
+    a .userbutton,
+    a.dropdown-toggle::after {
+        color: $asu-gold !important;
+    }
 }
