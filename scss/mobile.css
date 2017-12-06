@@ -1,0 +1,28 @@
+.bar-side-menu {
+  background-color: #ffcc00;
+}
+
+.bar-side-menu h2,
+.bar-side-menu p,
+.bar-side-menu i {
+  color: #3a3a3a !important;
+}
+
+.bar-content {
+  background-color: #ffcc00;
+}
+
+.bar-content button,
+.bar-content a,
+.bar-content .title,
+.bar-content i,
+.bar-content span {
+  color: #3a3a3a !important;
+}
+
+.mm-menu-selected:not(.button),
+.mm-split-item-selected:not(.button),
+.item.mma-mod-lesson-selected:not(.button),
+.mm-grades-table .mma-mod-lesson-selected.itemcenter:not(.button) {
+  border-left: 5px solid #ffcc00;
+}
