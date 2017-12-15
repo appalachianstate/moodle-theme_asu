@@ -50,7 +50,7 @@ $templatecontext = [
     'navdraweropen' => $navdraweropen,
     'regionmainsettingsmenu' => $regionmainsettingsmenu,
     'hasregionmainsettingsmenu' => !empty($regionmainsettingsmenu),
-    'ASUbird' => $OUTPUT->pix_url('ASUbird', 'theme')
+    'ASUbird' => $OUTPUT->image_url('ASUbird', 'theme')
 ];
 
 $templatecontext['flatnavigation'] = $PAGE->flatnav;
