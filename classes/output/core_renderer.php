@@ -72,7 +72,7 @@ class core_renderer extends \core_renderer {
      * @return string HTML to display the main header.
      */
     public function full_header() {
-        global $PAGE;
+        global $PAGE, $CFG;
 
         $html = html_writer::start_tag('header', array('id' => 'page-header', 'class' => 'row'));
         $html .= html_writer::start_div('col-xs-12 p-a-1');
@@ -95,14 +95,11 @@ class core_renderer extends \core_renderer {
         $html .= html_writer::end_div();
         $html .= html_writer::end_div();
         
-        $html .= html_writer::start_div('alert alert-warning');
-        $html .= html_writer::tag('h2', 'AsULearn archive');
-        $html .= html_writer::start_tag('p', array('class' => 'lead'));
-        $html .= 'You are on an AsULearn archive site. ';
-        $html .= html_writer::link('https://asulearn.appstate.edu', 'Go to AsULearn for the current year.');
-        $html .= html_writer::end_tag('p');
-        $html .= html_writer::end_div();
-        
+        // Render custom notification block if configured.
+        if (get_config('theme_asu', 'notify')) {
+            $html .= html_writer::div(get_config('theme_asu', 'notify'), 'alert alert-warning');
+        }
+
         $html .= html_writer::end_div();
         $html .= html_writer::end_tag('header');
         return $html;
