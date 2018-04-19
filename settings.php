@@ -92,12 +92,12 @@ if ($ADMIN->fulltree) {
             get_string('rawscss_desc', 'theme_asu'), '', PARAM_RAW);
     $setting->set_updatedcallback('theme_reset_all_caches');
     $page->add($setting);
-    
+
     // Notification block.
-    $setting = new admin_setting_confightmleditor('theme_asu/notify', get_string('notify', 'theme_asu'), 
+    $setting = new admin_setting_confightmleditor('theme_asu/notify', get_string('notify', 'theme_asu'),
             get_string('notify_desc', 'theme_asu'), '', PARAM_RAW);
     $setting->set_updatedcallback('theme_reset_all_caches');
     $page->add($setting);
-    
+
     $settings->add($page);
 }

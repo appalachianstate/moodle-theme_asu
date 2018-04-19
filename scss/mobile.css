@@ -27,8 +27,8 @@
   border-left: 5px solid #ffcc00;
 }
 
-.mm-tabs-color .tab-item.tab-item-active, 
-.mm-tabs-color .tab-item.active, 
+.mm-tabs-color .tab-item.tab-item-active,
+.mm-tabs-color .tab-item.active,
 .mm-tabs-color .tab-item.activated {
   border: 0 solid #ffcc00;
 }
