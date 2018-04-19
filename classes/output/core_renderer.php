@@ -94,9 +94,9 @@ class core_renderer extends \core_renderer {
         $html .= html_writer::tag('div', $this->course_header(), array('id' => 'course-header'));
         $html .= html_writer::end_div();
         $html .= html_writer::end_div();
-        
+
         // Render custom notification block if configured.
-        if (get_config('theme_asu', 'notify')) {
+        if (get_config('theme_asu', 'notify') && !html_is_blank(get_config('theme_asu', 'notify'))) {
             $html .= html_writer::div(get_config('theme_asu', 'notify'), 'alert alert-warning');
         }
 
@@ -553,7 +553,6 @@ class core_renderer extends \core_renderer {
                 ($currentnode->key === 'myprofile')) {
             $showusermenu = true;
         }
-
 
         if ($showfrontpagemenu) {
             $settingsnode = $this->page->settingsnav->find('frontpage', navigation_node::TYPE_SETTING);
