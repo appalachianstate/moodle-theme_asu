@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die;
 
-$plugin->version   = 2017012600;
+$plugin->version   = 2018041900;
 $plugin->requires  = 2016120501;
 $plugin->component = 'theme_asu';
 $plugin->dependencies = array(
