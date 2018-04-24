@@ -93,9 +93,16 @@ if ($ADMIN->fulltree) {
     $setting->set_updatedcallback('theme_reset_all_caches');
     $page->add($setting);
 
-    // Notification block.
+    // Notification block content.
     $setting = new admin_setting_confightmleditor('theme_asu/notify', get_string('notify', 'theme_asu'),
             get_string('notify_desc', 'theme_asu'), '', PARAM_RAW);
+    $setting->set_updatedcallback('theme_reset_all_caches');
+    $page->add($setting);
+
+    // Alert level for notification block.
+    $setting = new admin_setting_configselect('theme_asu/alert', get_string('alert', 'theme_asu'),
+            get_string('alert_desc', 'theme_asu'), 'danger',
+            array('success' => 'Success', 'danger' => 'Danger', 'warning' => 'Warning', 'info' => 'Info'));
     $setting->set_updatedcallback('theme_reset_all_caches');
     $page->add($setting);
 

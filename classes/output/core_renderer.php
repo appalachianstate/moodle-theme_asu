@@ -97,7 +97,8 @@ class core_renderer extends \core_renderer {
 
         // Render custom notification block if configured.
         if (get_config('theme_asu', 'notify') && !html_is_blank(get_config('theme_asu', 'notify'))) {
-            $html .= html_writer::div(get_config('theme_asu', 'notify'), 'alert alert-warning');
+            $notification = format_text(get_config('theme_asu', 'notify'));
+            $html .= html_writer::div($notification, 'alert alert-' . get_config('theme_asu', 'alert'));
         }
 
         $html .= html_writer::end_div();
