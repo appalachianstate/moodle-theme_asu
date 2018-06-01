@@ -25,9 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die;
 
-$plugin->version   = 2018042400;
-$plugin->requires  = 2016120501;
+$plugin->version   = 2018052900;
+$plugin->requires  = 2018051700;
 $plugin->component = 'theme_asu';
 $plugin->dependencies = array(
-    'theme_boost'  => 2016120500,
+    'theme_boost'  => 2018051400,
 );
