@@ -81,13 +81,13 @@ class core_renderer extends \core_renderer {
         $header->navbar = $this->navbar();
         $header->pageheadingbutton = $this->page_heading_button();
         $header->courseheader = $this->course_header();
-        
+
         // Render custom notification block if configured.
         if (get_config('theme_asu', 'notify') && !html_is_blank(get_config('theme_asu', 'notify'))) {
             $notification = format_text(get_config('theme_asu', 'notify'));
             $header->customalert = html_writer::div($notification, 'alert alert-' . get_config('theme_asu', 'alert'));
         }
-        
+
         return $this->render_from_template('theme_asu/header', $header);
     }
 
