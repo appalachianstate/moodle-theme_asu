@@ -43,3 +43,5 @@ $string['notify'] = 'Notification block content';
 $string['notify_desc'] = 'Use this field to provide content for the notification block at the top of all pages of the site.';
 $string['alert'] = 'Notification block alert level';
 $string['alert_desc'] = 'Select the alert level for the notification block at the top of all pages of the site.';
+$string['sitename'] = 'Use sitename in header';
+$string['sitename_desc'] = 'Enable to use suffix (last 7 characters) of sitename in header with logo (for -past sites).';

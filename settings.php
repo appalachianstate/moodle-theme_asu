@@ -105,6 +105,11 @@ if ($ADMIN->fulltree) {
             array('success' => 'Success', 'danger' => 'Danger', 'warning' => 'Warning', 'info' => 'Info'));
     $setting->set_updatedcallback('theme_reset_all_caches');
     $page->add($setting);
-
+    
+    // Use sitename in header for -past instances.
+    $setting = new admin_setting_configcheckbox('theme_asu/sitename', get_string('sitename', 'theme_asu'), get_string('sitename_desc', 'theme_asu'), 0);
+    $setting->set_updatedcallback('theme_reset_all_caches');
+    $page->add($setting);
+    
     $settings->add($page);
 }

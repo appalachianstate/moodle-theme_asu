@@ -43,6 +43,7 @@ $hasblocks = strpos($blockshtml, 'data-block=') !== false;
 $regionmainsettingsmenu = $OUTPUT->region_main_settings_menu();
 $templatecontext = [
     'sitename' => format_string($SITE->shortname, true, ['context' => context_course::instance(SITEID), "escape" => false]),
+    'sitenamesuffix' => get_config('theme_asu', 'sitename') ? substr(format_string($SITE->shortname, true, ['context' => context_course::instance(SITEID), "escape" => false]), -7) : null,
     'output' => $OUTPUT,
     'sidepreblocks' => $blockshtml,
     'hasblocks' => $hasblocks,
