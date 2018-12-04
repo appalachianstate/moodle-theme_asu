@@ -31,18 +31,16 @@ use preferences_groups;
 use action_menu;
 use help_icon;
 use single_button;
-use paging_bar;
 use context_course;
 use pix_icon;
 
 defined('MOODLE_INTERNAL') || die;
 
 /**
- * Strings for component 'theme_asu', language 'en', branch 'ASULEARN_32'
+ * Renderers to align Moodle's HTML with that expected by Bootstrap
  *
- * @package    theme_asu
- * @copyright  Appalachian State University
- * @author     Michelle Melton
+ * @package    theme_boost
+ * @copyright  2012 Bas Brands, www.basbrands.nl
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
@@ -81,14 +79,14 @@ class core_renderer extends \core_renderer {
         $header->navbar = $this->navbar();
         $header->pageheadingbutton = $this->page_heading_button();
         $header->courseheader = $this->course_header();
-
+        
         // Render custom notification block if configured.
         if (get_config('theme_asu', 'notify') && !html_is_blank(get_config('theme_asu', 'notify'))) {
             $notification = format_text(get_config('theme_asu', 'notify'));
             $header->customalert = html_writer::div($notification, 'alert alert-' . get_config('theme_asu', 'alert'));
         }
-
-        return $this->render_from_template('theme_asu/header', $header);
+        
+        return $this->render_from_template('theme_boost/header', $header);
     }
 
     /**
@@ -426,30 +424,22 @@ class core_renderer extends \core_renderer {
     }
 
     /**
-     * Renders a paging bar.
-     *
-     * @param paging_bar $pagingbar The object.
-     * @return string HTML
-     */
-    protected function render_paging_bar(paging_bar $pagingbar) {
-        // Any more than 10 is not usable and causes wierd wrapping of the pagination in this theme.
-        $pagingbar->maxdisplay = 10;
-        return $this->render_from_template('core/paging_bar', $pagingbar->export_for_template($this));
-    }
-
-    /**
      * Renders the login form.
      *
      * @param \core_auth\output\login $form The renderable.
      * @return string
      */
     public function render_login(\core_auth\output\login $form) {
-        global $SITE;
+        global $CFG, $SITE;
 
         $context = $form->export_for_template($this);
 
         // Override because rendering is not supported in template yet.
-        $context->cookieshelpiconformatted = $this->help_icon('cookiesenabled');
+        if ($CFG->rememberusername == 0) {
+            $context->cookieshelpiconformatted = $this->help_icon('cookiesenabledonlysession');
+        } else {
+            $context->cookieshelpiconformatted = $this->help_icon('cookiesenabled');
+        }
         $context->errorformatted = $this->error_text($context->error);
         $url = $this->get_logo_url();
         if ($url) {
