@@ -86,7 +86,7 @@ class core_renderer extends \core_renderer {
             $header->customalert = html_writer::div($notification, 'alert alert-' . get_config('theme_asu', 'alert'));
         }
         
-        return $this->render_from_template('theme_boost/header', $header);
+        return $this->render_from_template('theme_asu/header', $header);
     }
 
     /**
