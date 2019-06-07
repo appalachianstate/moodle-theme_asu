@@ -48,5 +48,11 @@ $THEME->layouts = array(
         'file' => 'columns2.php',
         'regions' => array(),
         'options' => array('langmenu' => true),
+    ),
+    // The pagelayout used for safebrowser and securewindow.
+    'secure' => array(
+        'file' => 'secure.php',
+        'regions' => array('side-pre'),
+        'defaultregion' => 'side-pre'
     )
 );
